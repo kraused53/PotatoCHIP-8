@@ -18,7 +18,7 @@ PotatoCHIP-8 is a learning-focused emulator that implements the classic CHIP-8 v
 
 ---
 
-## ✨ Features
+## 🎯 Features
 
 - ✅ Full CHIP-8 instruction set
 - ✅ ROM loading support
