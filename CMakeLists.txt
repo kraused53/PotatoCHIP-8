@@ -28,17 +28,20 @@ FetchContent_Declare(
 FetchContent_MakeAvailable( clogg )
 
 # CHIP 8 Emulator
-add_library(CHIP8
+add_library(
+  CHIP8
   src/core/emulator.cpp
   src/core/CHIP.cpp
 )
 
-target_include_directories(CHIP8
+target_include_directories(
+  CHIP8
   PUBLIC
     ${CMAKE_SOURCE_DIR}/include
 )
 
-target_link_libraries(CHIP8
+target_link_libraries(
+  CHIP8
   PUBLIC
     SDL2::SDL2
     SDL2::SDL2main
@@ -47,11 +50,13 @@ target_link_libraries(CHIP8
 )
 
 # Executable
-add_executable(potato_chip
+add_executable(
+  potato_chip
   src/main.cpp
 )
 
-target_link_libraries(potato_chip
+target_link_libraries(
+  potato_chip
   PRIVATE
     CHIP8
 )
